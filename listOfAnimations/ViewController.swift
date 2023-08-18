@@ -30,10 +30,18 @@ class ViewController: UIViewController {
     
     //MARK: - test Animations
     @objc func showAnimation() {
+        //1
+//        if myView.alpha == 0 {
+//            MyAnimation2.animation.fromMoreToLess(view: myView, controller: self)
+//        } else {
+//            MyAnimation2.animation.fromLessToMore(view: myView, controller: self)
+//        }
+        
+        //2
         if myView.alpha == 0 {
-            MyAnimation2.animation.fromMoreToLess(view: myView, controller: self)
+            MyAnimation1.animation.fromTopToBottom(view: myView, controller: self)
         } else {
-            MyAnimation2.animation.fromLessToMore(view: myView, controller: self)
+            MyAnimation1.animation.fromBottomToTop(view: myView, controller: self)
         }
     }
 
